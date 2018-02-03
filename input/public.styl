@@ -1,0 +1,182 @@
+﻿@import "reset.css";
+/*@import "function.css";*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+
+.w{max-width: 1340px;width: 100%;margin: 0 auto;}
+body{
+	font-size: 100%;
+}
+
+
+@font-face
+	font-family test
+	src url(../font/hakuyoxingshu3500.ttf)
+body,html,.wrap
+	width 100%
+	height 100%
+	font-family:'test','microsoft yahei',Arial;
+
+.sidebar
+	float left
+	width 260px
+	height 100%
+	background url(../img/menu.png) left top/100% 100% no-repeat
+	@media(max-height 890px)
+		width 220px
+	.logo
+		display block
+		width 158px
+		margin 0 auto
+		padding-top 40px
+		@media(max-height 890px)
+			padding-top 30px
+			width 130px
+		img
+			display block
+			width 100%
+	.list
+		padding-top 26px
+		padding-left 30px
+		padding-right 45px
+		@media(max-height 890px)
+			padding-left 10px
+			padding-right 25px
+			padding-top 6px
+		a
+			margin-bottom 26px
+			display block
+			height 58px
+			padding-top 10px
+			padding-right 20px
+			box-sizing border-box
+			font-size 20px
+			color #fff
+			letter-spacing 5px
+			line-height 48px
+			text-align right
+			background url(../img/menu-bg.png) left center no-repeat
+			transition 0.3s
+			@media(max-height 890px)
+				margin-bottom 0
+			&:hover
+			&.active
+				background url(../img/menu-bg-hover.png) left center no-repeat
+	.tel
+		padding 10px 0
+		margin 0 auto
+		width 150px
+		padding-left 40px
+		box-sizing border-box
+		font-size 14px
+		color #000
+		line-height 1.2
+		background url(../img/cal.png) left center no-repeat
+		@media(max-height 890px)
+			padding-top 5px
+			padding-bottom 5px
+		.red
+			color #ad0e0c
+	.qrcode
+		padding-top 40px
+		margin 0 auto
+		width 76px
+		@media(max-height 890px)
+			padding-top 0px
+		img
+			display block
+			width 100%
+.main
+	width 100%
+	height 100%
+	.content
+		margin-left 260px
+		overflow hidden
+		height 100%
+		background url(../img/content.png) left top/100% 100% no-repeat
+		@media(max-height 890px)
+			margin-left 220px
+		h1
+			margin-top 4%
+			padding 28px 0
+			font-size 30px
+			color #fff
+			letter-spacing 5px
+			text-align center
+			background url(../img/title.png) center top no-repeat
+			@media(max-height 890px)
+				margin-top 1%
+				padding 10px
+				background-size auto 100%
+		.nav
+			padding 2% 0 1%
+			font-size 0
+			text-align center
+			@media(max-height 890px)
+				padding 0
+			a
+				display inline-block
+				font-size 18px
+				color #010101
+				letter-spacing 5px
+				padding 20px 20px 10px
+				margin 0 7px
+				background url() -10px bottom no-repeat
+				@media(max-height 890px)
+					padding 10px 10px 10px
+				&:hover
+				&.active
+					background-image url(../img/hover.png)
+		.list
+			.row
+				font-size 0
+				text-align center
+				.item
+					display inline-block
+					margin 1.5%
+					width 264px
+					height 228px
+					box-sizing border-box
+					padding 20px 16px 0
+					background url(../img/product-bg.png) center center no-repeat
+					@media(max-height 890px)
+						margin 0
+					.pic
+						display block
+						img
+							display block
+							width 100%
+					.title
+						display block
+						padding 10px 0 20px
+						text-align center
+						font-size 18px
+						color #000			
+		.page-control
+			font-size 0
+			text-align center
+			@media(max-height 890px)
+				padding-top 10px
+			a
+				display inline-block
+				vertical-align middle
+			.left-btn
+			.right-btn
+				width 35px
+				height 36px
+				margin 0 6px
+			.num
+				margin 0 7px
+				width 36px
+				height 24px
+				font-size 14px
+				color #000
+				line-height 24px
+				text-align center
+				background #d2d2d2
